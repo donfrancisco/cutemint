@@ -1,0 +1,2 @@
+# cutemint
+Solana PFP Minter
