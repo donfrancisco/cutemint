@@ -11,6 +11,19 @@ import {
 import { useWallet } from "@solana/wallet-adapter-react";
 import Card from "../components/Card";
 import MintButton from "../components/MintButton";
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton,
+} from "react-twitter-embed";
+
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
 
@@ -40,6 +53,17 @@ const Home: NextPage = () => {
             alt="cutemint"
           />
           <h1 className={styles.h1}>cutemint</h1>
+        </div>
+        <div className="centerContent">
+          <div className="selfCenter spaceBetween">
+            <TwitterMentionButton
+              onLoad={function noRefCheck() {}}
+              options={{
+                size: "large",
+              }}
+              screenName="frankramosdev"
+            />
+          </div>
         </div>
 
         <div>
