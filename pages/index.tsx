@@ -29,8 +29,8 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.iconContainer}>
+      <div className={styles.header}>
+        <div className={styles.headerLogo}>
           <Image
             src="/cutemint.svg"
             height={60}
@@ -39,6 +39,14 @@ const Home: NextPage = () => {
             alt="cutemint"
           />
           <h1 className={styles.h1}>cutemint</h1>
+        </div>
+
+        <div>
+          <WalletMultiButton />
+        </div>
+      </div>
+      <div className={styles.container}>
+        <div className={styles.iconContainer}>
           {loadingMetadata ? (
             <div className={styles.loading}>Loading...</div>
           ) : (
@@ -56,8 +64,6 @@ const Home: NextPage = () => {
             </>
           )}
         </div>
-
-        <WalletMultiButton />
       </div>
     </>
   );
