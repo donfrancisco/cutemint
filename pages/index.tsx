@@ -58,27 +58,27 @@ const Home: NextPage = () => {
                   className={styles.thumbnail}
                   src={String(metadata?.image)}
                   alt={String(metadata?.name)}
-                  height={120}
+                  height={200}
                 />
               </div>
               <p className={styles.explain}>{metadata?.description}</p>
               <div className={styles.buttons}>
                 {publicKey && <MintButton />}
               </div>
-              <div className={styles.galleryContainer}>
-                {isLoading ? (
-                  <p>Loading...</p>
-                ) : (
-                  <main className={styles.gallery}>
-                    {nfts?.map((nft, idx) => (
-                      <Card key={idx} nft={nft} />
-                    ))}
-                  </main>
-                )}
-              </div>
             </>
           )}
         </div>
+      </div>
+      <div className={styles.galleryContainer}>
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <main className={styles.gallery}>
+            {nfts?.map((nft, idx) => (
+              <Card key={idx} nft={nft} />
+            ))}
+          </main>
+        )}
       </div>
     </>
   );
