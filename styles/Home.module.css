@@ -84,3 +84,7 @@
   font-weight: 600;
   border: none;
 }
+
+.galleryContainer {
+  background-color: rgba(0, 0, 3, 0.1);
+}
