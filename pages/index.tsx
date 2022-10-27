@@ -9,7 +9,8 @@ import {
   useSDK,
 } from "@thirdweb-dev/react/solana";
 import { useWallet } from "@solana/wallet-adapter-react";
-
+import Card from "../components/Card";
+import MintButton from "../components/MintButton";
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
 
@@ -63,6 +64,7 @@ const Home: NextPage = () => {
               <p className={styles.explain}>{metadata?.description}</p>
             </>
           )}
+          <div className={styles.buttons}>{publicKey && <MintButton />}</div>
         </div>
       </div>
     </>
