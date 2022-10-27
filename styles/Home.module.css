@@ -5,6 +5,7 @@
   width: 100vw;
   padding: 20px 20px;
   align-items: center;
+  background-color: rgba(255, 255, 255, 1);
 }
 .headerLogo {
   display: flex;
@@ -13,13 +14,13 @@
   align-items: center;
 }
 .container {
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
   padding: 0 24px;
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 .iconContainer {
@@ -27,8 +28,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  padding: 16px;
+  gap: 1px;
+  padding: 1px;
 }
 
 .h1 {
